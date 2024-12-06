@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    
+        <div class="container w-100">
+             
+               <!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary p-4">
+        <div class="container-fluid justify-content-between">
+          <!-- Left elements -->
+          <div class="d-flex mx-3">
+            <!-- Brand -->
+            <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+              <img
+                src="../Images/logo.jpg"
+                height="20"
+                alt="MDB Logo"
+                loading="lazy"
+                style="margin-top: 2px;"
+              />
+              Curona
+            </a>
+      
+            <!-- Search form -->
+            <form class="input-group w-auto my-auto d-none d-sm-flex">
+              <input
+                autocomplete="off"
+                type="search"
+                class="form-control rounded"
+                placeholder="Search"
+                style="min-width: 125px;"
+                id="searchInput"
+              />
+              <span class="input-group-text border-0 d-none d-lg-flex"
+                ><i class="fas fa-search"></i
+              ></span>
+            </form>
+          </div>
+          <!-- Left elements -->
+      
+          <!-- Center elements -->
+          <ul class="navbar-nav flex-row d-none d-md-flex">
+            <li class="nav-item me-3 me-lg-1 active">
+              <a class="nav-link" href="#">
+                Home
+              </a>
+            </li>
+      
+            <li class="nav-item me-3 me-lg-1">
+              <a class="nav-link" href="#">
+                Market
+              </a>
+            </li>
+      
+            <li class="nav-item me-3 me-lg-1">
+              <a class="nav-link" href="#">
+               Blog
+              </a>
+            </li>
+      
+            <li class="nav-item me-3 me-lg-1">
+              <a class="nav-link" href="#">
+                
+              </a>
+            </li>
+      
+            <li class="nav-item me-3 me-lg-1">
+              <a class="nav-link" href="#">
+               Career
+                <span class="badge rounded-pill bg-primary">hiring</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Center elements -->
+      
+          <!-- Right elements -->
+          <div class="navbar-nav flex-row">
+                <button type="button" id="started" class="btn btn-primary" data-mdb-ripple-init>Get Started <span style="border-left: 1px solid white; padding: 0 5px;">></span></button>
+           </div>
+          <!-- Right elements -->
+        </div>
+      </nav>
+      <!-- Navbar -->
+      
+     
+      <div class="blogcontainer" id="blogContainer" style="background-color: #f0f0f0; height: 800px; width: 100%;"></div>
+
+      <!-- footer -->
+      <footer class="bg-body-tertiary text-center">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Form -->
+          <section class=" d-flex w-100">
+
+            <form class="w-50">
+              <!--Grid row-->
+              <div class="row d-flex p-3 m-3" style="flex-direction: column; align-items: center;">
+                <!--Grid column-->
+                <div class="col-auto">
+                  <p class="pt-2" style="font-size: 2rem;">
+                    <strong>Sign up for our newsletter</strong>
+                  </p>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-md-10 col-12">
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline my-4 ">
+                    <input type="email" id="form5Example26" class="form-control" placeholder="Email"/>
+                  </div>
+                </div>
+                <!--Grid column-->
+      
+                <!--Grid column-->
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button data-mdb-ripple-init type="submit" class="btn btn-primary mb-4">
+                    Subscribe
+                  </button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+            <div class="cardImage w-50" style="height: 300px;">
+                <img src="https://picsum.photos/200/300" alt="Card image cap" style="height: 300px; width: 100%;">
+        </div>
+          </section>
+          <!-- Section: Form -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/">Coranu.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+        </div>
+
+
+
+      </div>
+
+  <script type="module" src="./blog.js"></script>
+  <script type="module" src="../firebase.js"></script>
+  </body>
+</html>
+
